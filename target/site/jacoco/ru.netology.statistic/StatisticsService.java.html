@@ -9,12 +9,11 @@ package ru.netology.statistic;
      * @return - index of first max value
      */
     public long findMax(long[] incomes) {
-<span class="fc" id="L12">        long current_max_index = 0;</span>
-<span class="fc" id="L13">        long current_max = incomes[0];</span>
-<span class="fc bfc" id="L14" title="All 2 branches covered.">        for (long income : incomes)</span>
-<span class="pc bpc" id="L15" title="1 of 2 branches missed.">            if (current_max &lt; income)</span>
-<span class="nc" id="L16">                current_max = income;</span>
-<span class="fc" id="L17">        return current_max;</span>
+<span class="fc" id="L12">        long current_max = incomes[0];</span>
+<span class="fc bfc" id="L13" title="All 2 branches covered.">        for (long income : incomes)</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">            if (current_max &lt;= income)</span>
+<span class="fc" id="L15">                current_max = income;</span>
+<span class="fc" id="L16">        return current_max;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
